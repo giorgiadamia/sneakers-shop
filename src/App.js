@@ -1,6 +1,30 @@
 function App() {
     return (
         <div className="wrapper">
+            <div className="overlay">
+                <div className="drawer">
+                    <h2>Cart</h2>
+
+                    <div className="cart__item">
+                        <img className="cart__item_image" width={70} height={70} src="/img/sneakers/1.jpg" alt="Sneakers"/>
+                        <div className="cart__item_description">
+                            <p>Nike Blazer Mid Suede Men's Sneakers</p>
+                            <b>100$</b>
+                        </div>
+                        <img className="cart__item_remove" src="/img/btn-remove.svg" alt="Remove"/>
+                    </div>
+
+                    <div className="cart__item">
+                        <img className="cart__item_image" width={70} height={70} src="/img/sneakers/1.jpg" alt="Sneakers"/>
+                        <div className="cart__item_description">
+                            <p>Nike Blazer Mid Suede Men's Sneakers</p>
+                            <b>100$</b>
+                        </div>
+                        <img className="cart__item_remove" src="/img/btn-remove.svg" alt="Remove"/>
+                    </div>
+                </div>
+            </div>
+
             <header>
                 <div className="header__left">
                     <img width={40} height={40} src="/img/logo.png" alt=""/>
@@ -20,10 +44,19 @@ function App() {
                 </ul>
             </header>
             <div className="content">
-                <h1>All Sneakers</h1>
+                <div className="search-block">
+                    <h1>All Sneakers</h1>
+                    <div className="search">
+                        <img src="/img/search.svg" alt="Search"/>
+                        <input placeholder="Search..."/>
+                    </div>
+                </div>
 
                 <div className="sneakers">
                     <div className="card">
+                        <div className="card__favorite">
+                            <img src="/img/heart-unliked.svg" alt="Unliked"/>
+                        </div>
                         <img width={133} height={112} src="/img/sneakers/1.jpg" alt="Sneaker"/>
                         <p>Nike Blazer Mid Suede Men's Sneakers</p>
                         <div className="card__bottom">
